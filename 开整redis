@@ -1,0 +1,21 @@
+之前看过一点.
+现在找0.1版本.重新看.
+首先是说明书.
+根目录下的README
+然后找到./doc/README.html
+
+根据里面说明测试一下.
+
+然后zmalloc.c
+然后sds.c
+adlist.c
+ae.c
+
+最后debug一下redis.c
+
+    makefile里面加入-g -O0
+    然后vscode配置好launch.json   也就是从其他项目中贴过来.改一下program为redis-server即可.
+    在redis.c里面加入断点.然后开启debug即可.
+
+    apt-get install tcl
+    1484行断点. 然后启动make test. 就可以了.
